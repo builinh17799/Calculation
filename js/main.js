@@ -45,8 +45,8 @@ function Calculator(billInput, numPeople, tipPercentage) {
         , tipPerPerson, zero;
     zero = 0;
 
-    totalAmount = (billInput / numPeople);
-    tipPerPerson = tipPercentage ? totalAmount * tipPercentage : 0;
+    tipPerPerson = (billInput * tipPercentage)/numPeople;
+    totalAmount = (billInput/numPeople) + tipPerPerson;
 
     if (billInput > 0 && numPeople > 0) {
         document.getElementById('tip-amount-value').textContent = '$' + tipPerPerson.toFixed(2);
