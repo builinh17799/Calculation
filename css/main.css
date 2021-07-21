@@ -261,3 +261,67 @@ textarea {
   }
 }
 
+.my-bg-color{
+  background-color:#f48fb1!important;
+  
+}
+.form-calculator{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+}
+.label{
+  font-weight: 700;
+    color:hsl(186deg 14% 43%);
+    font-size: 13px;
+}
+.tip-selection{
+  display: grid;
+    grid-template-columns: 4rem 4rem 4rem;
+    grid-gap: 0.5rem 0.3rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+ .tip-btn{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-weight: 700;
+    background-color: hsl(183deg 100% 15%);
+    color: white;
+    border-width: 0;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+#show-price{
+  background-color: hsl(183deg 100% 15%);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    margin-left: 35px;
+}
+.left{
+  color: white;
+  margin-right: 2rem;
+}
+#btn{
+  color: hsl(183deg 100% 15%);
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color:hsl(172deg 67% 45%);
+  width: 100%;
+  padding: 0.3rem;
+  margin-top: 2.6rem;
+  outline: none;
+  border-width: 0;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+#btn:hover{
+  background-color: hsl(185deg 41% 84%);
+}
+
