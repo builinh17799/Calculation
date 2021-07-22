@@ -2,13 +2,13 @@ const inputs = document.getElementsByClassName('input');
 let tipPercentage;
 
 let billInput = document.getElementById('bill-input');
-billInput.addEventListener('change', (e) => {
+billInput.addEventListener('keyup', (e) => {
     billInput = e.target.value;
     Calculator(billInput, numPeople, tipPercentage);
 })
 
 let numPeople = document.getElementById('number-of-people');
-numPeople.addEventListener('change', (e) => {
+numPeople.addEventListener('keyup', (e) => {
     numPeople = e.target.value;
     Calculator(billInput, numPeople, tipPercentage);
 })
