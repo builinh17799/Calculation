@@ -36,68 +36,75 @@
     <div class="d-flex" style="background-color: hsl(185deg 41% 84%);">
 
         <!-- Navbar -->
-        <div class="bg-light" style="width: 300px; height: calc(100vh - 50px);">
+        <div class="bg-light" style="width: 250px; height: calc(100vh - 50px);">
             <ul class=" nav nav-pills flex-column">
                 <li class="nav-item"><a href="/pages/calculator.html" class="nav-link">Calculator</a></li>
-            </ul>
+            </ul> 
         </div>
 
         <!-- Content -->
-        <div>
-
-            <div class="d-flex mt-5 form-calculator">
-
-                <div class="mr-5">
-
-                    <label id="bill-label" class="label" for="bill-input">Bill</label><br>
-                    <!--get --> <input class="input" id="bill-input" type="text"  value="0" style="text-align:right;"><br>
-                    <label id="tips" class="label" for="tip-selection">Select tips %</label>
-                    <!--get-->
-                    <div class="tip-selection">
-                        <button class="tip-btn active" id="btn-5" value="0.05">5%</button>
-                        <button class="tip-btn" id="btn-10" value="0.1">10%</button>
-                        <button class="tip-btn" id="btn-15" value="0.15">15%</button>
-                        <button class="tip-btn" id="btn-25" value="0.25">25%</button>
-                        <button class="tip-btn" id="btn-50" value="0.5">50%</button>
-                        <!-- <input id="custom-tip" type="text" placeholder="Custom"> -->
+        <!-- background -->
+        <div class="d-flex  justify-content-center align-items-center w-100 ">
+            <!-- form-calculator -->
+            <div class=" p-5  rounded-3 bg-white d-flex">
+                <div class="row">
+                    <div class="col-6 d-flex flex-column">
+                    
+                        <label id="bill-label" class="label" for="bill-input">Bill</label><br>
+                        <!--get --> <input class="input" id="bill-input" type="text" value="0" ><br>
+                    
+                    
+                        <label id="tips" class="label" for="tip-selection">Select tips %</label>
+                        <!--get-->
+                        <div class="tip-selection">
+                            <button class="tip-btn active" id="btn-5" value="0.05">5%</button>
+                            <button class="tip-btn" id="btn-10" value="0.1">10%</button>
+                            <button class="tip-btn" id="btn-15" value="0.15">15%</button>
+                            <button class="tip-btn" id="btn-25" value="0.25">25%</button>
+                            <button class="tip-btn" id="btn-50" value="0.3">30%</button>
+                            <button class="tip-btn" id="btn-50" value="0.5">50%</button>
+                            <!-- <input id="custom-tip" type="text" placeholder="Custom"> -->
+                    
                     </div>
-                    <div id="num-people-headers">
-                        <label id="people" class="label" for="number-of-people">Number of People</label><br>
-                        <!-- <p id="warn">can't be zero</p> -->
+                        <div id="num-people-headers">
+                            <label id="people" class="label" for="number-of-people">Number of People</label><br>
+                        </div>
+                        <!--get--> <input id="number-of-people" type="text" placeholder="0" value="0" >
                     </div>
-                    <!--get--> <input id="number-of-people" type="text" placeholder="0" value="0">
-
-                </div>
-                <!-- price-show -->
-                <div id="show-price">
-                    <div id="show-detailed-price ">
-                        <div id="tip-amount " class="sec d-flex">
-                            <div class="left ">
-                                <h5>Tip Amount</h5>
-                                <h6>/ person</h6>
+                    <!-- price-show -->
+                    
+                    <div id="show-price" class="col-6 d-flex flex-column">
+                        <div id="show-detailed-price">
+                            <div id="tip-amount" class="d-flex">
+                                <div class="left">
+                                   <h5>Tip Amount</h5>
+                                    <span>/person</span>
+                                </div>
+                                <div class="right ms-auto">
+                                    <!--get-->
+                                    <h1 id="tip-amount-value">$0.00</h1>
+                                </div>
                             </div>
-                            <div class="right">
-                                <!--get-->
-                                <h1 id="tip-amount-value">$0.00</h1>
+                            <div id="total" class="d-flex">
+                                <div class="left ">
+                                    <h5>Total</h5>
+                                    <span>/person</span>
+                                </div>
+                                <div class="right ms-auto" >
+                                    <!--get-->
+                                    <h1 id="total-amount-value">$0.00</h1>
+                                </div>
                             </div>
                         </div>
-                        <div id="total" class="sec d-flex">
-                            <div class="left">
-                                <h5>Total</h5>
-                                <h6>/ person</h6>
-                            </div>
-                            <div class="right">
-                                <!--get-->
-                                <h1 id="total-amount-value">$0.00</h1>
-                            </div>
+                        <div id="reset-btn">
+                            <button id="btn">Reset</button>
                         </div>
-                    </div>
-                    <div id="reset-btn">
-                        <button id="btn">Reset</button>
                     </div>
                 </div>
             </div>
+            <!-- /form-calculator -->
         </div>
+        <!-- /background -->
 
     </div>
     <script src="../js/main.js"></script>

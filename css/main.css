@@ -265,24 +265,15 @@ textarea {
   background-color:#f48fb1!important;
   
 }
-.form-calculator{
-  
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 0.8rem;
-}
+
 .label{
   font-weight: 700;
     color:hsl(186deg 14% 43%);
     font-size: 13px;
 }
 .tip-selection{
-  display: grid;
-    grid-template-columns: 4rem 4rem 4rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
     grid-gap: 0.5rem 0.3rem;
     margin-top: 0.6rem;
     margin-bottom: 0.8rem;
@@ -299,9 +290,9 @@ textarea {
 }
 #show-price{
   background-color: hsl(183deg 100% 15%);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0.8rem;
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 .left{
   color: white;
